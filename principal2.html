@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Centralizada</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            background: url('imagens/c10.png') no-repeat center center/cover;
+            overflow: hidden;
+        }
+
+        .box {
+            width: 300px;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            animation: colorShift 4s infinite;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .box h1 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .box button {
+            background: #ffffff;
+            color: #444;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        .box button:hover {
+            background: #ff9800;
+            transform: scale(1.1);
+        }
+
+        @keyframes colorShift {
+            0% {
+                background: #ff6f61;
+            }
+            25% {
+                background: #ff9800;
+            }
+            50% {
+                background: #8bc34a;
+            }
+            75% {
+                background: #03a9f4;
+            }
+            100% {
+                background: #ff6f61;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                width: 90%;
+            }
+
+            .box h1 {
+                font-size: 1.2rem;
+            }
+
+            .box button {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>De hoje em diante brilhe</h1>
+        <button onclick="window.location.href='happy birtday.html'">Entrar</button>
+    </div>
+</body>
+</html>
