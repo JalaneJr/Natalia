@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: url('img/Natalia.png') no-repeat center center fixed;
+    background: url('img/c10.png') no-repeat center center fixed;
     background-size: cover;
     color: #333;
     text-align: center;
@@ -36,7 +36,7 @@ section {
     width: 90px;
     height: 90px;
     border-radius: 100%;
-    background: url('img/n.png') no-repeat center center;
+    background: url('img/c16.png') no-repeat center center;
     background-size: cover;
     box-shadow: 0 4px 12px rgb(30, 238, 141);
 }
